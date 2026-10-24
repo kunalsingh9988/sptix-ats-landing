@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sptix — The AI-native ATS built for how Indian teams actually hire</title>
+<meta name="description" content="An applicant tracking system, AI screening engine, interview manager, and analytics suite — in one product, with one onboarding, at one price.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232563eb'/%3E%3Cpath d='M11 20.5c1.2 2 3.5 3 6 3 3.4 0 5.7-1.9 5.7-4.6 0-6.4-11.5-3.4-11.5-8.5 0-2.4 2-4 5-4 2.2 0 4 .9 5.1 2.5l-2.2 1.6c-.8-1.1-1.8-1.6-3-1.6-1.8 0-2.9.9-2.9 2.1 0 3.2 11.5 1.9 11.5 8.5 0 3.1-2.8 5.1-6.7 5.1-3.2 0-6-1.3-7.3-3.4z' fill='%23fff' transform='scale(.86) translate(2.6,2.2)'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- Announcement bar -->
+<div class="announce">
+  <div class="container announce-inner">
+    <p>New: AI Phone Screening now screens candidates in 12 Indian languages</p>
+    <a href="#" class="announce-link">See how it works <span aria-hidden="true">→</span></a>
+  </div>
+</div>
+
+<!-- Header / Nav -->
+<header class="site-header" id="top">
+  <div class="container nav-wrap">
+    <a href="#" class="brand" aria-label="Sptix home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <rect width="40" height="40" rx="10" fill="url(#bm)"/>
+        <path d="M14 25.4c1.4 2.4 4.3 3.7 7.3 3.7 4.2 0 7-2.3 7-5.6 0-7.8-14-4.2-14-10.4 0-2.9 2.5-4.9 6.1-4.9 2.7 0 4.9 1.1 6.2 3.1l-2.7 2c-1-1.4-2.2-2-3.6-2-2.2 0-3.5 1.1-3.5 2.6 0 3.9 14 2.3 14 10.4 0 3.8-3.4 6.2-8.2 6.2-3.9 0-7.3-1.6-8.9-4.2z" fill="#fff"/>
+        <defs><linearGradient id="bm" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#3b82f6"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient></defs>
+      </svg>
+      <span class="brand-name">Sptix</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#features">Products</a>
+      <a href="#product">Features</a>
+      <a href="#ai-agent">Talent Cloud</a>
+      <a href="#suite">Free Pilot</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#" class="btn btn-primary btn-sm">Try Free</a>
+      <a href="#" class="btn btn-ghost btn-sm">Log in</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <nav class="mobile-menu-links" aria-label="Mobile">
+      <a href="#features">Products</a>
+      <a href="#product">Features</a>
+      <a href="#ai-agent">Talent Cloud</a>
+      <a href="#suite">Free Pilot</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <div class="mobile-menu-actions">
+      <a href="#" class="btn btn-primary btn-block">Try Free</a>
+      <a href="#" class="btn btn-ghost btn-block">Log in</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-badges">
+      <span class="hb"><span class="hb-logo g2">G2</span> 4.8 <span class="stars" aria-hidden="true">★★★★★</span></span>
+      <span class="hb"><span class="hb-logo cap">Capterra</span> 4.7 <span class="stars" aria-hidden="true">★★★★★</span></span>
+      <span class="hb"><span class="hb-logo gtw">GetApp</span> 4.8 <span class="stars" aria-hidden="true">★★★★★</span></span>
+      <span class="hb"><span class="hb-logo sd">SourceForge</span> 4.9 <span class="stars" aria-hidden="true">★★★★★</span></span>
+      <span class="hb"><span class="hb-logo sa">SaaSworthy</span> 4.7 <span class="stars" aria-hidden="true">★★★★★</span></span>
+    </div>
+
+    <h1 class="hero-title">The AI-native ATS built for<br class="br-desktop"> how Indian teams actually hire</h1>
+    <p class="hero-sub">An applicant tracking system, AI screening engine, interview manager, and analytics suite — in one product, with one onboarding, at one price.</p>
+
+    <div class="hero-cta">
+      <a href="#" class="btn btn-primary btn-lg">Try Free</a>
+      <a href="#pricing" class="btn btn-outline btn-lg">See Pricing</a>
+    </div>
+
+    <div class="hero-awards">
+      <div class="award"><span class="award-shield"></span><div><strong>High Performer</strong><small>Winter 2026</small></div></div>
+      <div class="award"><span class="award-shield"></span><div><strong>Easiest To Use</strong><small>Mid-Market</small></div></div>
+      <div class="award"><span class="award-shield"></span><div><strong>Best Support</strong><small>Small Business</small></div></div>
+      <div class="award"><span class="award-shield"></span><div><strong>Momentum Leader</strong><small>ATS Category</small></div></div>
+      <div class="award"><span class="award-shield"></span><div><strong>Users Love Us</strong><small>2026</small></div></div>
+    </div>
+
+    <p class="hero-note">4.8/5 on G2 · 2,400+ hiring teams · Set up in a day</p>
+  </div>
+</section>
+
+<!-- Trust strip (light) -->
+<section class="trust">
+  <div class="container trust-inner">
+    <p class="trust-label">Trusted by hiring teams at</p>
+    <div class="trust-logos">
+      <span class="tlogo">Facilio</span>
+      <span class="tlogo">ZingHR</span>
+      <span class="tlogo">Praxis</span>
+      <span class="tlogo">unbundl</span>
+      <span class="tlogo">Dhampur</span>
+      <span class="tlogo">Authority&nbsp;Ventures</span>
+      <span class="tlogo">Nexa</span>
+      <span class="tlogo">Corelink</span>
+    </div>
+  </div>
+</section>
+
+<!-- Problem -->
+<section class="section problem">
+  <div class="container">
+    <p class="eyebrow">The problem</p>
+    <h2 class="section-title">Stop drowning in applications.<br class="br-desktop"> Start closing hires.</h2>
+    <div class="stats-grid">
+      <div class="stat-card stat-feature">
+        <div class="stat-top">
+          <svg class="ico" viewBox="0 0 24 24"><path d="M14 3v5h5M9 13h6M9 17h6M7 21h10a2 2 0 0 0 2-2V8l-5-5H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2Z"/></svg>
+          <span class="stat-num">1,000+</span>
+        </div>
+        <p class="stat-label">resumes land on every posting — most never get read.</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-top">
+          <svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <span class="stat-num">68%</span>
+        </div>
+        <p class="stat-label">of recruiter time goes to manual screening, not interviews.</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-top">
+          <svg class="ico" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg>
+          <span class="stat-num">3.2 wks</span>
+        </div>
+        <p class="stat-label">average time-to-hire when tools and data live in silos.</p>
+      </div>
+      <div class="stat-card">
+        <div class="stat-top">
+          <svg class="ico" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m17 8 5 5m0-5-5 5"/></svg>
+          <span class="stat-num">45%</span>
+        </div>
+        <p class="stat-label">of candidates drop off mid-funnel from slow follow-ups.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Workflow preview block -->
+<section class="section workflow">
+  <div class="container">
+    <div class="split-panel">
+      <div class="split-text">
+        <p class="eyebrow">One workflow</p>
+        <h3>From job post to offer — nothing in between falls through.</h3>
+        <p class="muted">Post the role, let AI screen every applicant, run structured interviews and send the offer — all inside one pipeline your whole team shares.</p>
+        <ul class="check-list">
+          <li>AI-written JD, screening questions and salary band</li>
+          <li>Every applicant scored and ranked the moment they apply</li>
+          <li>Interview kits, scorecards and debriefs built in</li>
+          <li>Offer letters and follow-ups drafted for you</li>
+        </ul>
+        <a href="#" class="btn btn-primary">See the workflow</a>
+      </div>
+      <div class="split-ui">
+        <div class="mini-window">
+          <div class="mw-bar"><span class="mw-dot"></span><span class="mw-dot"></span><span class="mw-dot"></span><span class="mw-url">sptix.ai/company/jobs/new</span></div>
+          <div class="mw-body">
+            <p class="mw-label">AI Job Posting</p>
+            <p class="mw-prompt">› Senior backend engineer, 5+ yrs, Python + AWS, hybrid Bangalore</p>
+            <div class="mw-card">
+              <strong>Senior Backend Engineer</strong>
+              <span class="mw-meta">Engineering · Senior · Bangalore</span>
+              <div class="mw-chips"><span>Python</span><span>AWS</span><span>Postgres</span><span>GraphQL</span></div>
+              <div class="mw-line"></div>
+              <div class="mw-line short"></div>
+              <div class="mw-salary">Suggested salary <strong>₹25–40 LPA</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="center"><a href="#" class="btn btn-primary btn-lg">Try it on your first role</a></div>
+  </div>
+</section>
+
+<!-- Product preview -->
+<section class="section product" id="product">
+  <div class="container">
+    <p class="eyebrow">See it live</p>
+    <h2 class="section-title">The actual product,<br class="br-desktop"> not a pretty mock</h2>
+    <p class="section-sub">A live view of the Sptix employer dashboard — funnel, active jobs, and AI top picks above the fold.</p>
+
+    <div class="dash">
+      <div class="dash-bar">
+        <span class="mw-dot"></span><span class="mw-dot"></span><span class="mw-dot"></span>
+        <span class="dash-url">sptix.ai/company/dashboard</span>
+        <a href="#" class="dash-open">Open this view</a>
+      </div>
+      <div class="dash-body">
+        <aside class="dash-side">
+          <div class="ds-brand"><span class="ds-logo">S</span> Sptix</div>
+          <div class="ds-company"><span class="ds-avatar">TC</span><div><strong>TechCorp</strong><small>3 active jobs</small></div></div>
+          <nav class="ds-nav">
+            <span class="ds-head">Super Admin</span>
+            <a class="active" href="#">Dashboard</a>
+            <a href="#">Company Profile</a>
+            <a href="#">Jobs</a>
+            <a href="#">Post a Job</a>
+            <a href="#">Candidates</a>
+            <a href="#">AI Agent</a>
+            <a href="#">Analytics</a>
+            <a href="#">Team</a>
+            <a href="#">Messages</a>
+            <a href="#">Plans &amp; Credits</a>
+          </nav>
+        </aside>
+        <div class="dash-main">
+          <div class="dash-top">
+            <div><h4>Welcome back, TechCorp</h4><p class="muted">3 active jobs · 163 total applicants</p></div>
+            <a href="#" class="btn btn-primary btn-sm">Post a New Job</a>
+          </div>
+          <div class="dash-stats">
+            <div class="dstat"><strong>3</strong><span>Active jobs</span></div>
+            <div class="dstat"><strong>163</strong><span>Total applicants</span></div>
+            <div class="dstat"><strong>10</strong><span>Shortlisted</span></div>
+            <div class="dstat"><strong>8</strong><span>Interviews</span></div>
+            <div class="dstat"><strong>18 days</strong><span>Avg. time to hire</span></div>
+          </div>
+          <div class="dash-grid">
+            <div class="dash-card funnel">
+              <div class="dc-head"><strong>Hiring Pipeline</strong><span>Full pipeline</span></div>
+              <div class="funnel-rows">
+                <div class="frow"><span>Applied</span><div class="fbar" style="--w:100%"><i></i></div><b>163</b></div>
+                <div class="frow"><span>Screened</span><div class="fbar" style="--w:62%"><i></i></div><b>84</b></div>
+                <div class="frow"><span>Interview</span><div class="fbar" style="--w:38%"><i></i></div><b>26</b></div>
+                <div class="frow"><span>Offer</span><div class="fbar" style="--w:20%"><i></i></div><b>8</b></div>
+                <div class="frow"><span>Hired</span><div class="fbar" style="--w:12%"><i></i></div><b>2</b></div>
+              </div>
+            </div>
+            <div class="dash-card">
+              <div class="dc-head"><strong>AI Hiring Intelligence</strong><span>Smart insights</span></div>
+              <div class="ai-row"><span class="ai-ico top">★</span><div><strong>Top Picks Today · 10</strong><p>Ranked by fit for Senior Frontend Engineer — review before the inbox.</p></div><a href="#">Review</a></div>
+              <div class="ai-row"><span class="ai-ico risk">!</span><div><strong>Hiring Risk · 2</strong><p>Two roles have gone 14+ days without a screening call.</p></div><a href="#">See risks</a></div>
+              <div class="ai-row"><span class="ai-ico job">◆</span><div><strong>Job Health · 1 alert</strong><p>Product Designer is below its applicant benchmark this week.</p></div><a href="#">View jobs</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="center"><a href="#" class="btn btn-primary btn-lg">Open this view</a></div>
+  </div>
+</section>
+
+<!-- Feature / module cards -->
+<section class="section features" id="features">
+  <div class="container">
+    <p class="eyebrow">The complete hiring suite</p>
+    <h2 class="section-title">Every piece of modern hiring,<br class="br-desktop"> in one place</h2>
+    <p class="section-sub">Six modules that cover the entire hiring lifecycle — each one included, none of them bolted on.</p>
+
+    <div class="card-grid grid-3">
+      <a href="#" class="feat-card">
+        <div class="fc-preview">
+          <div class="fcp-row"><span class="fcp-dot"></span>Smart List · Senior roles<span class="fcp-tag">32</span></div>
+          <div class="fcp-row"><span class="fcp-dot"></span>Tags · Referral, Fast-track<span class="fcp-tag">18</span></div>
+          <div class="fcp-row"><span class="fcp-dot"></span>Bulk action · Move to screen<span class="fcp-tag">7</span></div>
+        </div>
+        <h3>Candidate Management</h3>
+        <p>Smart Lists, tags, bulk actions, and notes — keep every candidate organized.</p>
+        <span class="fc-link">Learn more →</span>
+      </a>
+      <a href="#" class="feat-card">
+        <div class="fc-preview">
+          <div class="fcp-row"><span class="fcp-dot"></span>Panel · 3 interviewers<span class="fcp-tag">Slot</span></div>
+          <div class="fcp-row"><span class="fcp-dot"></span>Scorecard · 5 criteria<span class="fcp-tag">4.2</span></div>
+          <div class="fcp-row"><span class="fcp-dot"></span>Debrief · calibrated<span class="fcp-tag">Done</span></div>
+        </div>
+        <h3>Interview Management</h3>
+        <p>Schedule, score, debrief, and decide — without leaving Sptix.</p>
+        <span class="fc-link">Learn more →</span>
+      </a>
+      <a href="#" class="feat-card">
+        <div class="fc-preview">
+          <div class="fcp-row"><span class="fcp-dot"></span>Trigger · New applicant<span class="fcp-tag">On</span></div>
+          <div class="fcp-row"><span class="fcp-dot"></span>Auto-screen → rank<span class="fcp-tag">On</span></div>
+          <div class="fcp-row"><span class="fcp-dot"></span>Stage move + email<span class="fcp-tag">On</span></div>
+        </div>
+        <h3>Recruitment Automation</h3>
+        <p>Trigger emails, screening, and stage moves on autopilot.</p>
+        <span class="fc-link">Learn more →</span>
+      </a>
+      <a href="#" class="feat-card">
+        <div class="fc-preview">
+          <div class="fcp-bars"><i style="--h:40%"></i><i style="--h:65%"></i><i style="--h:52%"></i><i style="--h:80%"></i><i style="--h:95%"></i></div>
+        </div>
+        <h3>Hiring Analytics</h3>
+        <p>Funnel, source ROI, time-to-hire, and bias audit in one place.</p>
+        <span class="fc-link">Learn more →</span>
+      </a>
+      <a href="#" class="feat-card">
+        <div class="fc-preview">
+          <div class="fcp-score"><span>96</span><em>match</em></div>
+          <div class="fcp-row"><span class="fcp-dot"></span>Reasoning surfaced</div>
+          <div class="fcp-row"><span class="fcp-dot"></span>Red flags checked</div>
+        </div>
+        <h3>AI Resume Screening</h3>
+        <p>Every applicant scored with reasoning — in seconds.</p>
+        <span class="fc-link">Learn more →</span>
+      </a>
+      <a href="#" class="feat-card">
+        <div class="fc-preview">
+          <div class="fcp-row"><span class="fcp-dot"></span>A. Rao<span class="fcp-tag hi">96%</span></div>
+          <div class="fcp-row"><span class="fcp-dot"></span>M. Khan<span class="fcp-tag">92%</span></div>
+          <div class="fcp-row"><span class="fcp-dot"></span>J. Thomas<span class="fcp-tag">88%</span></div>
+        </div>
+        <h3>AI Candidate Ranking</h3>
+        <p>Top 10% surfaced before you open the inbox.</p>
+        <span class="fc-link">Learn more →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- AI Agent -->
+<section class="section ai-agent" id="ai-agent">
+  <div class="container">
+    <p class="eyebrow">Sptix AI Agent</p>
+    <h2 class="section-title">An agent that screens while<br class="br-desktop"> you sleep</h2>
+    <p class="section-sub">Point it at a role and it reads every resume, asks the dealbreaker questions, and hands you a ranked shortlist with reasoning.</p>
+
+    <div class="agent-panel">
+      <div class="agent-col">
+        <div class="agent-card">
+          <div class="ac-head"><span class="ac-pulse"></span>AI Agent · Senior Backend Engineer · 142 applicants</div>
+          <div class="ac-msg"><strong>Screening complete.</strong> 142 resumes parsed, 138 scored, 12 top picks ranked by fit.</div>
+          <div class="ac-msg"><strong>3 red flags flagged:</strong> employment gap &gt; 12 months (2), notice period &gt; 90 days (1).</div>
+          <div class="ac-msg"><strong>Drafted outreach</strong> for the top 10 — personalized to each profile. Pending your approval.</div>
+        </div>
+      </div>
+      <div class="agent-col">
+        <div class="agent-card">
+          <div class="ac-head muted-head">Ranked shortlist</div>
+          <div class="rank-row"><span class="rank-av">A</span><div><strong>A. Rao</strong><small>Senior Backend Engineer · 7 yrs</small><div class="rk-chips"><span>Python</span><span>AWS</span><span>Postgres</span></div></div><b class="rank-score top">96%</b></div>
+          <div class="rank-row"><span class="rank-av">M</span><div><strong>M. Khan</strong><small>Backend Engineer · 6 yrs</small><div class="rk-chips"><span>Python</span><span>AWS</span><span>Postgres</span></div></div><b class="rank-score">92%</b></div>
+          <div class="rank-row"><span class="rank-av">J</span><div><strong>J. Thomas</strong><small>Backend Engineer · 4 yrs · <em>Gap: 8 months</em></small><div class="rk-chips"><span>Python</span><span>Java</span><span>AWS</span></div></div><b class="rank-score">88%</b></div>
+          <div class="rank-row"><span class="rank-av">S</span><div><strong>S. Patel</strong><small>Backend Engineer · 5 yrs</small><div class="rk-chips"><span>Python</span><span>AWS</span></div></div><b class="rank-score">81%</b></div>
+        </div>
+      </div>
+    </div>
+    <div class="center"><a href="#" class="btn btn-primary btn-lg">Meet the AI Agent</a></div>
+  </div>
+</section>
+
+<!-- Benefits / AI everywhere -->
+<section class="section benefits">
+  <div class="container">
+    <p class="eyebrow">Sptix AI everywhere</p>
+    <h2 class="section-title">AI built into every step<br class="br-desktop"> of hiring</h2>
+    <p class="section-sub">Not a chatbot bolted on — woven through every workflow, from drafting a JD to writing your follow-ups.</p>
+
+    <div class="card-grid grid-3">
+      <div class="icon-card">
+        <span class="ic-box"><svg class="ico" viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></span>
+        <h3>AI Job Writer</h3>
+        <p>Prompt-to-JD in 60 seconds, fully editable.</p>
+      </div>
+      <div class="icon-card">
+        <span class="ic-box"><svg class="ico" viewBox="0 0 24 24"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <h3>AI Top Picks</h3>
+        <p>Candidates ranked by 40+ signals with explainable scores.</p>
+      </div>
+      <div class="icon-card">
+        <span class="ic-box"><svg class="ico" viewBox="0 0 24 24"><path d="M22 3 2 11l6 2 2 6 4-5 5 4z" transform="rotate(-8 12 12)"/></svg></span>
+        <h3>AI Screening</h3>
+        <p>Smart questions with dealbreaker flags filter weak applicants.</p>
+      </div>
+      <div class="icon-card">
+        <span class="ic-box"><svg class="ico" viewBox="0 0 24 24"><path d="m12 9 4 4m0-4-4 4M12 3a9 9 0 1 0 9 9" /><path d="M12 3a9 9 0 1 0 9 9h0"/></svg></span>
+        <h3>Red Flag Detection</h3>
+        <p>Auto-surface gaps, inconsistencies and red flags worth noting.</p>
+      </div>
+      <div class="icon-card">
+        <span class="ic-box"><svg class="ico" viewBox="0 0 24 24"><path d="M3 6h18M7 12h14M11 18h10"/></svg></span>
+        <h3>Recommended Order</h3>
+        <p>AI orders your interview pipeline by interviewability.</p>
+      </div>
+      <div class="icon-card">
+        <span class="ic-box"><svg class="ico" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><path d="m5 5 14 14"/></svg></span>
+        <h3>Blind Mode AI</h3>
+        <p>Masks identity signals while preserving match quality.</p>
+      </div>
+    </div>
+    <div class="center"><a href="#" class="btn btn-primary btn-lg">See all AI features</a></div>
+  </div>
+</section>
+
+<!-- Why Sptix / comparison -->
+<section class="section compare" id="pricing">
+  <div class="container">
+    <p class="eyebrow">Why Sptix</p>
+    <h2 class="section-title">Built different.<br class="br-desktop"> On purpose.</h2>
+
+    <div class="compare-panels">
+      <div class="cp cp-sptix">
+        <div class="cp-head"><svg class="cp-logo" viewBox="0 0 40 40"><rect width="40" height="40" rx="10" fill="#2563eb"/><path d="M14 25.4c1.4 2.4 4.3 3.7 7.3 3.7 4.2 0 7-2.3 7-5.6 0-7.8-14-4.2-14-10.4 0-2.9 2.5-4.9 6.1-4.9 2.7 0 4.9 1.1 6.2 3.1l-2.7 2c-1-1.4-2.2-2-3.6-2-2.2 0-3.5 1.1-3.5 2.6 0 3.9 14 2.3 14 10.4 0 3.8-3.4 6.2-8.2 6.2-3.9 0-7.3-1.6-8.9-4.2z" fill="#fff"/></svg> Sptix</div>
+        <ul>
+          <li>AI screening + ranking built-in</li>
+          <li>Indian-market salary + skill graph</li>
+          <li>One product, one price, one onboarding</li>
+          <li>Modern UX your hiring managers actually use</li>
+        </ul>
+      </div>
+      <div class="cp cp-generic">
+        <div class="cp-head">Generic tools</div>
+        <ul>
+          <li>Add-on costing extra per seat</li>
+          <li>US-first product retrofitted for India</li>
+          <li>5 add-ons + integrations to glue together</li>
+          <li>Crowded UI requiring a 2-hour training</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mini-stats">
+      <div class="mini-stat"><strong>6.8 days</strong><span>avg. time to interview</span><div class="ms-bar"><i style="--w:78%"></i></div></div>
+      <div class="mini-stat"><strong>93%</strong><span>match accuracy on top picks</span><div class="ms-bar"><i style="--w:93%"></i></div></div>
+      <div class="mini-stat"><strong>1.7K+</strong><span>active candidates screened weekly</span><div class="ms-bar"><i style="--w:64%"></i></div></div>
+    </div>
+
+    <!-- Comparison table -->
+    <div class="table-wrap" role="region" aria-label="Feature comparison" tabindex="0">
+      <table class="cmp-table">
+        <thead>
+          <tr><th>What you need</th><th>Legacy ATS</th><th>Point tools</th><th class="hl">Sptix</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>AI screening + ranking</td><td>Paid add-on</td><td>Separate tool</td><td class="hl">Built-in</td></tr>
+          <tr><td>Indian salary + skill graph</td><td>✗</td><td>Partial</td><td class="hl">Native</td></tr>
+          <tr><td>Setup + onboarding</td><td>4–8 weeks</td><td>Per tool</td><td class="hl">Same day</td></tr>
+          <tr><td>Interview kits + debriefs</td><td>✗</td><td>Extra seat cost</td><td class="hl">Included</td></tr>
+          <tr><td>Bias audit + blind hiring</td><td>✗</td><td>✗</td><td class="hl">One toggle</td></tr>
+          <tr><td>Pricing</td><td>Per seat + modules</td><td>Per tool stack</td><td class="hl">One price</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-hint">Scroll the table sideways on smaller screens →</p>
+    <div class="center"><a href="#" class="btn btn-primary btn-lg">Compare plans</a></div>
+  </div>
+</section>
+
+<!-- Industries hub -->
+<section class="section hub">
+  <div class="container">
+    <p class="eyebrow">One engine, every industry</p>
+    <h2 class="section-title">How Sptix AI runs hiring<br class="br-desktop"> across industries</h2>
+    <p class="section-sub">A single system connecting to all of your hiring needs — whether you hire 5 engineers a year or 5,000 field staff a month.</p>
+
+    <div class="hub-wrap">
+      <div class="hub-col hub-left">
+        <div class="hub-card"><strong>IT Services &amp; GCCs</strong><span>High-volume tech hiring with skill-graph matching</span></div>
+        <div class="hub-card"><strong>Startups &amp; SaaS</strong><span>Small teams that need the top 10%, fast</span></div>
+        <div class="hub-card"><strong>Staffing &amp; RPO</strong><span>Vendor pipelines and multi-client mandates</span></div>
+      </div>
+      <div class="hub-center">
+        <div class="hub-ring" aria-hidden="true"></div>
+        <div class="hub-logo">
+          <svg viewBox="0 0 40 40"><rect width="40" height="40" rx="10" fill="url(#hm)"/><path d="M14 25.4c1.4 2.4 4.3 3.7 7.3 3.7 4.2 0 7-2.3 7-5.6 0-7.8-14-4.2-14-10.4 0-2.9 2.5-4.9 6.1-4.9 2.7 0 4.9 1.1 6.2 3.1l-2.7 2c-1-1.4-2.2-2-3.6-2-2.2 0-3.5 1.1-3.5 2.6 0 3.9 14 2.3 14 10.4 0 3.8-3.4 6.2-8.2 6.2-3.9 0-7.3-1.6-8.9-4.2z" fill="#fff"/><defs><linearGradient id="hm" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#3b82f6"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient></defs></svg>
+          <span>Sptix</span>
+        </div>
+      </div>
+      <div class="hub-col hub-right">
+        <div class="hub-card"><strong>BFSI &amp; Fintech</strong><span>Compliance-first screening at scale</span></div>
+        <div class="hub-card"><strong>Manufacturing</strong><span>Plant, shift and blue-collar pipelines</span></div>
+        <div class="hub-card"><strong>Healthcare &amp; Pharma</strong><span>Credentialed roles, verified and ranked</span></div>
+      </div>
+    </div>
+    <div class="center"><a href="#" class="btn btn-primary btn-lg">See it in your industry</a></div>
+  </div>
+</section>
+
+<!-- Explore the suite -->
+<section class="section suite" id="suite">
+  <div class="container">
+    <p class="eyebrow">Explore the suite</p>
+    <h2 class="section-title">See how Sptix helps teams<br class="br-desktop"> hire, end to end</h2>
+    <p class="section-sub">Every Sptix product shares one account, one pipeline and one source of truth.</p>
+
+    <div class="card-grid grid-3">
+      <a href="#" class="icon-card link-card">
+        <span class="ic-box"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v16"/></svg></span>
+        <h3>ATS Software</h3>
+        <p>The AI-native applicant tracking system: pipeline, screening, interviews and analytics in one product.</p>
+        <span class="fc-link">Explore →</span>
+      </a>
+      <a href="#" class="icon-card link-card">
+        <span class="ic-box"><svg class="ico" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+        <h3>AI Phone Screening</h3>
+        <p>A voice agent that calls applicants in 12 Indian languages, asks your questions and scores the answers.</p>
+        <span class="fc-link">Explore →</span>
+      </a>
+      <a href="#" class="icon-card link-card">
+        <span class="ic-box"><svg class="ico" viewBox="0 0 24 24"><path d="M20 7h-9M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg></span>
+        <h3>CaRM</h3>
+        <p>A talent memory of every candidate you've met — the Rediscovery Inbox says who to call when a role opens.</p>
+        <span class="fc-link">Explore →</span>
+      </a>
+      <a href="#" class="icon-card link-card">
+        <span class="ic-box"><svg class="ico" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        <h3>HRMS</h3>
+        <p>Onboarding, attendance, leave and payroll with PF, ESI, PT and TDS — offered candidates arrive as joiners.</p>
+        <span class="fc-link">Explore →</span>
+      </a>
+      <a href="#" class="icon-card link-card">
+        <span class="ic-box"><svg class="ico" viewBox="0 0 24 24"><path d="M12 22s7-4.5 7-11a7 7 0 1 0-14 0c0 6.5 7 11 7 11Z"/><circle cx="12" cy="11" r="2.5"/></svg></span>
+        <h3>Field</h3>
+        <p>Attendance with duty-bound GPS, beat plans, offline forms and expenses for teams on the road.</p>
+        <span class="fc-link">Explore →</span>
+      </a>
+      <a href="#" class="icon-card link-card">
+        <span class="ic-box"><svg class="ico" viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></span>
+        <h3>Talent Cloud</h3>
+        <p>Hand us the mandate — our team and AI source, vet and deliver the top 1% to your interview table.</p>
+        <span class="fc-link">Explore →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Data policy -->
+<section class="section data-policy">
+  <div class="container">
+    <p class="eyebrow">Data policy</p>
+    <h2 class="section-title">Your data stays yours.<br class="br-desktop"> <span class="accent">Always.</span></h2>
+    <p class="section-sub">Enterprise-grade controls on every plan — because your pipeline is your business.</p>
+
+    <div class="policy-grid">
+      <div class="policy-card"><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><div><h3>Encrypted everywhere</h3><p>AES-256 at rest, TLS 1.3 in transit.</p></div></div>
+      <div class="policy-card"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"/></svg><div><h3>India data residency</h3><p>Candidate data hosted in-region, DPDP-aligned.</p></div></div>
+      <div class="policy-card"><svg class="ico" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg><div><h3>Granular permissions</h3><p>Five role tiers plus a full audit log.</p></div></div>
+      <div class="policy-card"><svg class="ico" viewBox="0 0 24 24"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/><path d="m9 12 2 2 4-4"/></svg><div><h3>No training on your data</h3><p>Your pipeline never trains shared models.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq" id="faq">
+  <div class="container container-narrow">
+    <p class="eyebrow">FAQ</p>
+    <h2 class="section-title">Still got questions?<br class="br-desktop"> <span class="accent">We've got answers.</span></h2>
+
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary><span class="fq-ico"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 .2c0 1.7-2.5 2-2.5 3.8M12 17h.01"/></svg></span><span class="fq-q">Is Sptix a full Applicant Tracking System?</span><span class="fq-btn" aria-hidden="true"></span></summary>
+        <div class="fq-a"><p>Yes. Sptix is a complete ATS: job posting with an AI-written JD, a public jobs page for your company, an applicant pipeline with custom stages, candidate profiles with notes and tags, structured interview scorecards, team roles and permissions, and hiring analytics. AI screening and ranking sit on top of that core instead of replacing it.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="fq-ico"><svg class="ico" viewBox="0 0 24 24"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7Z"/></svg></span><span class="fq-q">How is Sptix different from Greenhouse or Lever?</span><span class="fq-btn" aria-hidden="true"></span></summary>
+        <div class="fq-a"><p>Those are strong US-first ATS products. Sptix is built for Indian hiring: Indian salary benchmarks, an Indian skill graph, WhatsApp-first candidate comms, and AI screening included rather than sold per seat — at a price Indian teams can actually sign off.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="fq-ico"><svg class="ico" viewBox="0 0 24 24"><path d="M12 8V4m0 0L8 8m4-4 4 4"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M9 14h.01M15 14h.01"/></svg></span><span class="fq-q">How does the AI hiring software work?</span><span class="fq-btn" aria-hidden="true"></span></summary>
+        <div class="fq-a"><p>AI parses every resume, scores applicants on 40+ fit signals against your JD, flags dealbreakers, and produces a ranked shortlist with written reasoning — before you open the inbox. You stay in control: every score is explainable and every action is yours to approve.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="fq-ico"><svg class="ico" viewBox="0 0 24 24"><path d="M8 3 4 7l4 4"/><path d="M4 7h16M16 21l4-4-4-4"/><path d="M20 17H4"/></svg></span><span class="fq-q">Can I migrate from another ATS?</span><span class="fq-btn" aria-hidden="true"></span></summary>
+        <div class="fq-a"><p>Yes — bulk import jobs, candidates, and history from CSV or from your existing ATS. Most teams finish migration and run their first Sptix pipeline within a week, with hands-on help from our team during the pilot.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="fq-ico"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span><span class="fq-q">Is there a free trial?</span><span class="fq-btn" aria-hidden="true"></span></summary>
+        <div class="fq-a"><p>Every company plan starts with a 7-day free trial. Nothing is charged until it ends, you can cancel anytime, and you'll be inside the product in 60 seconds.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="fq-ico"><svg class="ico" viewBox="0 0 24 24"><path d="m12 14 4-4"/><path d="M3.3 7.3 7 11a5.7 5.7 0 0 0 8 0l3.7-3.7M14 22v-4M10 22v-4M5 17l-2-2M19 17l2-2"/></svg></span><span class="fq-q">What integrations are supported?</span><span class="fq-btn" aria-hidden="true"></span></summary>
+        <div class="fq-a"><p>Google and Outlook calendars for scheduling, email sync, job boards, WhatsApp notifications, and webhooks/API for everything else. Native integrations ship free — no middleware tax.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="fq-ico"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"/></svg></span><span class="fq-q">Does Sptix support remote and global hiring?</span><span class="fq-btn" aria-hidden="true"></span></summary>
+        <div class="fq-a"><p>Yes. Remote, hybrid and multi-location roles are first-class — with timezone-aware scheduling, region-based salary benchmarks, and pipelines for contractors and global entities.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="fq-ico"><svg class="ico" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></span><span class="fq-q">Is there a vendor / agency portal?</span><span class="fq-btn" aria-hidden="true"></span></summary>
+        <div class="fq-a"><p>Yes — recruiting partners get a tracked portal to submit candidates straight into your funnel, with duplicate detection, source attribution and per-vendor performance analytics.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="fq-ico"><svg class="ico" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 12L2 9Z"/><path d="M2 9h20M12 21 8 9l4-6 4 6-4 12"/></svg></span><span class="fq-q">How does pricing work?</span><span class="fq-btn" aria-hidden="true"></span></summary>
+        <div class="fq-a"><p>One product, one price — per company, sized by plan, not per seat. AI screening, analytics and every module included. No per-feature add-ons, no surprise line items at renewal.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="fq-ico"><svg class="ico" viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7Z"/></svg></span><span class="fq-q">How long does implementation take?</span><span class="fq-btn" aria-hidden="true"></span></summary>
+        <div class="fq-a"><p>Minutes, not months. Sign up, create your company, and post your first AI-drafted role the same day. Data migration from an existing ATS typically completes inside a week.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta">
+  <div class="container">
+    <div class="cta-panel">
+      <div class="cta-glow" aria-hidden="true"></div>
+      <h2>Ready to try ATS Software?</h2>
+      <p>7-day free trial. Nothing is charged until it ends. You'll be inside the product in 60 seconds.</p>
+      <div class="hero-cta">
+        <a href="#" class="btn btn-primary btn-lg">Try Free</a>
+        <a href="#pricing" class="btn btn-outline btn-lg">See Pricing</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand">
+          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#2563eb"/><path d="M14 25.4c1.4 2.4 4.3 3.7 7.3 3.7 4.2 0 7-2.3 7-5.6 0-7.8-14-4.2-14-10.4 0-2.9 2.5-4.9 6.1-4.9 2.7 0 4.9 1.1 6.2 3.1l-2.7 2c-1-1.4-2.2-2-3.6-2-2.2 0-3.5 1.1-3.5 2.6 0 3.9 14 2.3 14 10.4 0 3.8-3.4 6.2-8.2 6.2-3.9 0-7.3-1.6-8.9-4.2z" fill="#fff"/></svg>
+          <span class="brand-name">Sptix</span>
+        </a>
+        <p>SPTIX is an AI-powered Hiring and Career Intelligence Platform helping organizations hire smarter and professionals grow faster.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M2.5 17a24 24 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49 49 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24 24 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49 49 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3Z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3Z"/></svg></a>
+        </div>
+      </div>
+
+      <nav class="fcol" aria-label="Product">
+        <h4>Product</h4>
+        <a href="#">ATS Software</a><a href="#">AI Phone Screening</a><a href="#">HRMS</a><a href="#">CaRM</a><a href="#">Field</a><a href="#">Talent Cloud</a><a href="#">Pricing</a>
+      </nav>
+      <nav class="fcol" aria-label="Job seekers">
+        <h4>Job Seekers</h4>
+        <a href="#">Browse Jobs</a><a href="#">Companies Hiring</a><a href="#">Jobs by Role</a><a href="#">Remote Jobs</a><a href="#">Engineering Jobs</a><a href="#">Design Jobs</a><a href="#">Senior Roles</a>
+      </nav>
+      <nav class="fcol" aria-label="Company">
+        <h4>Company</h4>
+        <a href="#">About Us</a><a href="#">Blog</a><a href="#">Careers</a><a href="#">Press</a><a href="#">Become a Partner</a><a href="#">Pilot Program</a><a href="#">Contact</a>
+      </nav>
+      <nav class="fcol" aria-label="Resources">
+        <h4>Resources</h4>
+        <a href="#">Help Center</a><a href="#">Tutorials</a><a href="#">Resume Tips</a><a href="#">Interview Guide</a><a href="#">Salary Calculator</a><a href="#">Career Advice</a>
+      </nav>
+      <nav class="fcol" aria-label="Legal">
+        <h4>Legal</h4>
+        <a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Cookie Policy</a><a href="#">GDPR</a><a href="#">Accessibility</a>
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Sptix AI LLP. All rights reserved.</p>
+      <div class="fb-links"><a href="#">Status</a><a href="#">Security</a><a href="#">Sitemap</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
