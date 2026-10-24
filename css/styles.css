@@ -139,6 +139,11 @@ a[data-node-id] { cursor: pointer; transition: opacity .15s ease; }
   }
   .sec-lifecycle [data-node-id="40000082:695"],
   .sec-lifecycle [data-node-id="40000082:709"] { width: 100% !important; }
+  /* stage cards: let the cropped UI previews fully reveal on small screens */
+  .sec-lifecycle .c338,
+  .sec-lifecycle .c339 { height: auto !important; min-height: 0 !important; }
+  .sec-lifecycle .c352,
+  .sec-lifecycle .c408 { display: none !important; } /* bottom fade masks */
 
   /* ---- ai agent tabs 4x176 -> 2x2 ---- */
   .sec-aiagent [data-node-id="40000082:1141"],
