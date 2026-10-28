@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#09090c">
+<title>Sptix HRMS — Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="app">
+
+  <!-- ============ A · Header ============ -->
+  <header class="hd">
+    <div class="hd-text">
+      <p class="hd-date">Monday, 26 October</p>
+      <h1 class="hd-greet">Good afternoon,<br>Anchit</h1>
+      <div class="hd-org">
+        <img class="hd-org-logo" src="../assets/e2820c45-f0a8-4c3d-a6be-82df5c2e128e.png" alt="Sptix">
+        <span class="hd-org-name">Sptix AI</span>
+      </div>
+    </div>
+    <button class="avatar" aria-label="Profile">AK</button>
+  </header>
+
+  <main class="page">
+
+    <!-- ============ B · Attendance ============ -->
+    <section class="card att" aria-label="Today's attendance">
+      <div class="att-top">
+        <span class="icotile icotile--blue">
+          <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg>
+        </span>
+        <div class="att-when">
+          <p class="eyebrow">Today</p>
+          <p class="att-shift">10:30 am – 7:30 pm</p>
+          <p class="att-shift-sub">General</p>
+        </div>
+        <span class="badge badge--muted">
+          <svg class="ic ic--xs" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg>
+          Clocked out
+        </span>
+      </div>
+
+      <div class="att-stats">
+        <div class="att-stat">
+          <p class="att-stat-label">
+            <svg class="ic ic--xs" viewBox="0 0 24 24"><path d="M9 17l-4-4 4-4"/><path d="M5 13h10a4 4 0 0 1 4 4v1"/></svg>
+            Clock in
+          </p>
+          <p class="att-stat-val">12:44 pm</p>
+        </div>
+        <div class="att-stat">
+          <p class="att-stat-label">
+            <svg class="ic ic--xs" viewBox="0 0 24 24"><path d="M15 7l4 4-4 4"/><path d="M19 11H9a4 4 0 0 0-4 4v1"/></svg>
+            Clock out
+          </p>
+          <p class="att-stat-val">1:16 pm</p>
+        </div>
+        <div class="att-stat">
+          <p class="att-stat-label">
+            <svg class="ic ic--xs" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg>
+            Worked
+          </p>
+          <p class="att-stat-val">31m</p>
+        </div>
+      </div>
+
+      <div class="progress" role="progressbar" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100" aria-label="Shift progress">
+        <div class="progress-fill" style="width:6%"></div>
+      </div>
+
+      <a class="rowlink" href="#" data-action="attendance">
+        <svg class="ic" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="16" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg>
+        View attendance
+      </a>
+    </section>
+
+    <!-- ============ C · Metrics ============ -->
+    <section class="metrics" aria-label="Overview">
+      <a class="card metric" href="#" data-action="leave">
+        <span class="icotile icotile--blue">
+          <svg class="ic" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="16" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17M8.5 14.5h2M13.5 14.5h2M8.5 17.5h2"/></svg>
+        </span>
+        <span class="metric-val">23.5</span>
+        <span class="metric-label">Leave left<em>days</em></span>
+      </a>
+      <a class="card metric" href="#" data-action="approvals">
+        <span class="icotile icotile--blue">
+          <svg class="ic" viewBox="0 0 24 24"><path d="M4.5 12.5l5 5 10-11"/></svg>
+        </span>
+        <span class="metric-val">0</span>
+        <span class="metric-label">To approve</span>
+      </a>
+      <a class="card metric" href="#" data-action="inbox">
+        <span class="icotile icotile--blue">
+          <svg class="ic" viewBox="0 0 24 24"><path d="M18 9a6 6 0 1 0-12 0c0 5-2 6-2 6h16s-2-1-2-6"/><path d="M10 19a2.2 2.2 0 0 0 4 0"/></svg>
+        </span>
+        <span class="metric-val">0</span>
+        <span class="metric-label">Unread</span>
+      </a>
+    </section>
+
+    <!-- ============ D · Quick actions ============ -->
+    <section aria-label="Quick actions">
+      <p class="sec-title">Quick actions</p>
+      <div class="qa">
+        <button class="qa-item" data-action="apply-leave">
+          <span class="icotile icotile--lg icotile--blue">
+            <svg class="ic" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="16" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17M12 13v5M9.5 15.5h5"/></svg>
+          </span>
+          <span class="qa-label">Apply leave</span>
+        </button>
+        <button class="qa-item" data-action="payslips">
+          <span class="icotile icotile--lg icotile--blue">
+            <svg class="ic" viewBox="0 0 24 24"><path d="M7 3.5h7.5L19 8v12.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 20.5v-16A1.5 1.5 0 0 1 6.5 3.5z"/><path d="M14 3.5V8h4.5M9 13h6M9 16.5h6"/></svg>
+          </span>
+          <span class="qa-label">Payslips</span>
+        </button>
+        <button class="qa-item" data-action="expense">
+          <span class="icotile icotile--lg icotile--blue">
+            <svg class="ic" viewBox="0 0 24 24"><rect x="3" y="6.5" width="18" height="12" rx="2.5"/><path d="M16 12.5h.01M3 10.5h18"/></svg>
+          </span>
+          <span class="qa-label">Expense</span>
+        </button>
+        <button class="qa-item" data-action="timesheet">
+          <span class="icotile icotile--lg icotile--blue">
+            <svg class="ic" viewBox="0 0 24 24"><path d="M6.5 3.5h11v3.5l-4 5 4 5v3.5h-11V17l4-5-4-5z"/><path d="M9 18h6"/></svg>
+          </span>
+          <span class="qa-label">Timesheet</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ E · Approvals ============ -->
+    <a class="card appr" href="#" data-action="approvals">
+      <span class="icotile icotile--green">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M4.5 12.5l5 5 10-11"/></svg>
+      </span>
+      <span class="appr-text">
+        <span class="eyebrow">Approvals</span>
+        <span class="appr-status">All caught up</span>
+      </span>
+      <svg class="ic ic--chev" viewBox="0 0 24 24"><path d="M9.5 6l6 6-6 6"/></svg>
+    </a>
+
+    <!-- ============ F · Leave balance ============ -->
+    <section aria-label="Leave balance">
+      <div class="sec-head">
+        <p class="sec-title sec-title--icon">
+          <svg class="ic ic--sm" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="16" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg>
+          Leave balance
+        </p>
+        <a class="sec-link" href="#" data-action="leave-all">View all</a>
+      </div>
+      <div class="leave-track">
+        <div class="card leave">
+          <p class="leave-name">Casual leave</p>
+          <p class="leave-num"><strong>8</strong><span class="leave-of">of 8</span></p>
+          <div class="progress progress--thin"><div class="progress-fill" style="width:100%"></div></div>
+          <p class="leave-sub">Days available</p>
+        </div>
+        <div class="card leave">
+          <p class="leave-name">Sick leave</p>
+          <p class="leave-num"><strong>5.5</strong><span class="leave-of">of 5.5</span></p>
+          <div class="progress progress--thin"><div class="progress-fill" style="width:100%"></div></div>
+          <p class="leave-sub">Days available</p>
+        </div>
+        <div class="card leave">
+          <p class="leave-name">Earned leave</p>
+          <p class="leave-num"><strong>12</strong><span class="leave-of">of 15</span></p>
+          <div class="progress progress--thin"><div class="progress-fill" style="width:80%"></div></div>
+          <p class="leave-sub">Days available</p>
+        </div>
+        <div class="card leave">
+          <p class="leave-name">Unpaid leave</p>
+          <p class="leave-num"><strong>0</strong><span class="leave-of">of 0</span></p>
+          <div class="progress progress--thin"><div class="progress-fill" style="width:0%"></div></div>
+          <p class="leave-sub">Days available</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ G · Latest payslip ============ -->
+    <section aria-label="Latest payslip">
+      <div class="sec-head">
+        <p class="sec-title sec-title--icon">
+          <svg class="ic ic--sm" viewBox="0 0 24 24"><path d="M7 3.5h7.5L19 8v12.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 20.5v-16A1.5 1.5 0 0 1 6.5 3.5z"/><path d="M14 3.5V8h4.5"/></svg>
+          Latest payslip
+        </p>
+        <a class="sec-link" href="#" data-action="payslips">All payslips</a>
+      </div>
+      <div class="card payslip">
+        <div class="pay-net">
+          <span class="icotile icotile--blue">
+            <svg class="ic" viewBox="0 0 24 24"><rect x="3" y="6.5" width="18" height="12" rx="2.5"/><path d="M3 10.5h18M16 15h.01"/></svg>
+          </span>
+          <span class="pay-net-text">
+            <span class="eyebrow">Net pay</span>
+            <span class="pay-amt" id="payAmt" data-masked="••••••" data-value="₹ XX,XXX">••••••</span>
+          </span>
+          <button class="eye" id="payEye" aria-label="Show net pay" aria-pressed="false">
+            <svg class="ic ic--eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></svg>
+            <svg class="ic ic--eyeoff" viewBox="0 0 24 24" style="display:none"><path d="M4 4l16 16M9.9 5.9A9.6 9.6 0 0 1 12 5.5c6 0 9.5 6.5 9.5 6.5a16.6 16.6 0 0 1-3.2 3.9M6.1 7.7A16 16 0 0 0 2.5 12S6 18.5 12 18.5c1 0 2-.2 2.8-.5"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg>
+          </button>
+        </div>
+        <div class="pay-rows">
+          <div class="pay-row">
+            <span class="pay-row-label">
+              <svg class="ic ic--xs" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="16" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg>
+              Pay period
+            </span>
+            <span class="pay-row-val">September 2026 (1 Sept – 30 Sept)</span>
+          </div>
+          <div class="pay-row">
+            <span class="pay-row-label">
+              <svg class="ic ic--xs" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg>
+              Pay date
+            </span>
+            <span class="pay-row-val">5 Oct 2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ H · Policies ============ -->
+    <a class="card pol" href="#" data-action="policies">
+      <div class="pol-head">
+        <span class="icotile icotile--blue">
+          <svg class="ic" viewBox="0 0 24 24"><path d="M7 3.5h7.5L19 8v12.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 20.5v-16A1.5 1.5 0 0 1 6.5 3.5z"/><path d="M14 3.5V8h4.5M9 13h6M9 16.5h6"/></svg>
+        </span>
+        <div class="pol-head-text">
+          <p class="eyebrow">Policies</p>
+          <p class="pol-count"><strong>6</strong> policies need your acceptance</p>
+        </div>
+        <svg class="ic ic--chev" viewBox="0 0 24 24"><path d="M9.5 6l6 6-6 6"/></svg>
+      </div>
+      <ul class="pol-list">
+        <li class="pol-item">
+          <svg class="ic ic--xs" viewBox="0 0 24 24"><path d="M7 3.5h7.5L19 8v12.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 20.5v-16A1.5 1.5 0 0 1 6.5 3.5z"/><path d="M14 3.5V8h4.5"/></svg>
+          <span>Employee exit &amp; separation policy</span>
+        </li>
+        <li class="pol-item">
+          <svg class="ic ic--xs" viewBox="0 0 24 24"><path d="M12 3.5l7 2.8v5.2c0 4.4-3 8.4-7 9.9-4-1.5-7-5.5-7-9.9V6.3z"/></svg>
+          <span>Legal compliance policy</span>
+        </li>
+        <li class="pol-item">
+          <svg class="ic ic--xs" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="16" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg>
+          <span>Leave policy</span>
+        </li>
+        <li class="pol-item pol-item--more"><span>+ 3 more</span></li>
+      </ul>
+    </a>
+
+  </main>
+
+  <!-- ============ I · Bottom navigation ============ -->
+  <nav class="tabbar" aria-label="Primary">
+    <button class="tab is-active" data-tab="home" aria-current="page">
+      <span class="tab-pill"><svg class="ic" viewBox="0 0 24 24"><path d="M4 11.5L12 4l8 7.5"/><path d="M6.5 10v9.5h11V10"/></svg></span>
+      <span>Home</span>
+    </button>
+    <button class="tab" data-tab="workspace">
+      <span class="tab-pill"><svg class="ic" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/><rect x="3.5" y="13.5" width="7" height="7" rx="2"/><rect x="13.5" y="13.5" width="7" height="7" rx="2"/></svg></span>
+      <span>Workspace</span>
+    </button>
+    <button class="tab" data-tab="inbox">
+      <span class="tab-pill"><svg class="ic" viewBox="0 0 24 24"><path d="M3.5 13.5L6 5.5A2 2 0 0 1 8 4h8a2 2 0 0 1 2 1.6l2.4 7.9V18a2 2 0 0 1-2 2H5.5a2 2 0 0 1-2-2z"/><path d="M3.5 13.5H9a3 3 0 0 0 6 0h5.4"/></svg></span>
+      <span>Inbox</span>
+    </button>
+    <button class="tab" data-tab="people">
+      <span class="tab-pill"><svg class="ic" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><path d="M15.5 5.6a3.5 3.5 0 0 1 0 4.8M17.6 14.9a5.5 5.5 0 0 1 2.9 5.1"/></svg></span>
+      <span>People</span>
+    </button>
+    <button class="tab" data-tab="me">
+      <span class="tab-pill"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5.5 20a6.5 6.5 0 0 1 13 0"/></svg></span>
+      <span>Me</span>
+    </button>
+  </nav>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
